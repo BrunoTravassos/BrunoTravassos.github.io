@@ -1,0 +1,65 @@
+.row1-quemsomos {
+    width: 100%;
+}
+
+.pagina-qs .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.pagina-qs h2 {
+    font-weight: 400;
+}
+
+.pagina-qs .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+.featurette img {
+    border-radius: 50px 20px;
+    box-shadow: #0d5e14 0.112rem 0.112rem 0.312rem;
+}
+
+.featurette-divider {
+    margin: 5rem 0;
+}
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+    /* box-shadow: #0d5e14 0.112rem 0.112rem 0.312rem; */
+}
+
+@media (max-width: 575.98px) {
+    .marketing-qs {
+        margin-top: 3.5rem!important;
+    }
+    .navbar a.altocontraste i {
+        font-size: 1.5rem;
+    }
+    .inner-banner {
+        margin-top: 3.5rem;
+    }
+}
+
+@media (min-width: 40em) {
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .pagina-qs {
+        margin-top: 5.5rem!important;
+    }
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
