@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #f3fff8;
+    /* background-color: #40a86b; */
+}
+
+main>.container {
+    padding: 0 15px 0;
+}
+
+/* @media (max-width: 575.98px) { */
+
+@media only screen and (min-width: 320px) and (max-width: 769px) {
+    .produtos-po {
+        margin-top: 4.5rem!important;
+    }
+    .navbar a.altocontraste i {
+        font-size: 1.5rem;
+    }
+    .inner-banner {
+        margin-top: 3.5rem;
+    }
+    .featurette-heading {
+        margin-bottom: 1rem;
+    }
+    .img-parceiro {
+        margin-left: 18%;
+    }
+    .cadastro {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (min-width: 30em) {
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
+    .plantas {
+        height: 32rem;
+    }
+    .img_doce {
+        height: 23%;
+    }
+    .img_planta {
+        height: 54%;
+    }
+    .img_planta2, .img_planta4 {
+        height: 47%;
+    }
+}
+
+@media (min-width: 62em) {
+    .produtos-po {
+        margin-top: 5.5rem!important;
+    }
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+    .featurette-heading.cadastro {
+        margin-top: 2.5rem;
+    }
+    .plantas {
+        height: 32rem;
+    }
+    .img_doce {
+        height: 36%;
+    }
+    .img_planta {
+        height: 54%;
+    }
+    .img_planta2, .img_planta4 {
+        height: 47%;
+    }
+}
+
+.featurette-divider {
+    margin: 3rem 0;
+}
+
+.featurette img {
+    border-radius: 50px 20px;
+    box-shadow: #0d5e14 0.112rem 0.112rem 0.312rem;
+}
+
+.btn-card {
+    /* background-color: rgba(31, 71, 18, 0.9); */
+    /* background: linear-gradient(150deg, rgba(21, 68, 6, 1) 10%, rgb(82, 146, 32) 53%); */
+    background: rgba(21, 68, 6, 0.8);
+    color: whitesmoke;
+}
