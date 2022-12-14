@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #f3fff8;
+    
+}
+
+main>.container {
+    padding: 0 15px 0;
+    min-height: 89vh;
+}
+
+.row1-quemsomos {
+    width: 100%;
+}
+
+.pagina-qs .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.pagina-qs h2 {
+    font-weight: 400;
+}
+
+.pagina-qs .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+.featurette .img1 {
+    border-radius: 50px 20px;
+    margin-top: 2.5rem !important;
+    box-shadow: #be4343 0.112rem 0.112rem 0.312rem;
+}
+
+.featurette-divider {
+    margin: 4rem 0;
+}
+
+.featurette-heading .featurette-heading-1 {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 769px) {
+    .pagina-qs {
+        margin-top: 3.5rem !important;
+    }
+
+    .navbar a.altocontraste i {
+        font-size: 1.5rem;
+    }
+
+    .inner-banner {
+        margin-top: 3.5rem;
+    }
+
+    .featurette-divider {
+        margin: 3rem 0;
+    }
+
+    .featurette-heading .featurette-heading-1 {
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .featurette .img1 {
+        border-radius: 50px 20px;
+        margin-top: 2.5rem !important;
+        box-shadow: #be4343 0.112rem 0.112rem 0.312rem;
+    }
+
+    .img1 {
+        margin-top: 3.5rem !important;
+    }
+
+    .img2 {
+        margin-top: 3rem !important;
+    }
+
+    .img2-1 {
+        margin-top: 1.5rem !important;
+    }
+}
+
+@media (min-width: 30em) {
+    .pagina-qs {
+        margin-top: 3.5rem !important;
+    }
+
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+        margin-top: 8.5rem !important;
+    }
+
+    .featurette-heading-1 {
+        font-size: 50px;
+        margin-top: 1.5rem !important;
+    }
+
+    .img1 {
+        margin-top: 4.5rem !important;
+    }
+
+    .img2 {
+        margin-top: 2.5rem !important;
+    }
+
+    .img2-1 {
+        margin-top: 2.5rem !important;
+    }
+}
+
+@media (min-width: 52em) {
+    .pagina-qs {
+        margin-top: 5.5rem !important;
+    }
+
+    .featurette-heading {
+        margin-top: 8rem;
+    }
+
+    .img1 {
+        margin-top: 1.5rem !important;
+    }
+
+    .img2 {
+        margin-top: 1.5rem !important;
+    }
+
+    .img2-1 {
+        margin-top: 0.5rem !important;
+    }
+}

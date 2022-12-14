@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #f3fff8;
+}
+
+main>.container {
+    padding: 0 15px 0;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 769px) {
+    .produtos-po {
+        margin-top: 4.5rem !important;
+    }
+
+    .navbar a.altocontraste i {
+        font-size: 1.5rem;
+    }
+
+    .inner-banner {
+        margin-top: 3.5rem;
+    }
+
+    .featurette-heading {
+        margin-bottom: 1rem;
+    }
+
+    .img-parceiro {
+        margin-left: 18%;
+    }
+
+    .cadastro {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (min-width: 30em) {
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+
+    .doces {
+        height: 32rem;
+    }
+
+    .img_doce {
+        height: 23%;
+    }
+
+
+}
+
+@media (min-width: 62em) {
+    .produtos-po {
+        margin-top: 1.5rem !important;
+    }
+
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+
+    .featurette-heading.cadastro {
+        margin-top: .5rem;
+    }
+
+    .doces {
+        height: 32rem;
+    }
+
+    .img_doce {
+        height: 36%;
+    }
+
+}
+
+.featurette-divider {
+    margin: 3rem 0;
+}
+
+.featurette img {
+    border-radius: 50px 20px;
+    box-shadow: rgb(150, 77, 38)  0.112rem 0.112rem 0.312rem;
+}
+
+.btn-card {
+    background: rgba(40, 18, 1, 0.9);
+    color: rgb(255, 255, 255);
+}
+
+.btn-card:hover {
+    background: rgba(156, 71, 25, 0.5);
+    color: rgb(179, 64, 64);
+}

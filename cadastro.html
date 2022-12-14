@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Cadastro</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/quemsomos.css">
+    <link rel="stylesheet" href="css/produtos.css">
+    <!--  -->
+</head>
+
+<body class="d-flex flex-column h-100 home">
+    <class class="container p-0"></class>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top mb-3">
+            <a class="navbar-brand ml-sm-5" href="index.html">Doces do Bem</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav m-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(Pagina Principal)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="QuemSomos.html">Quem Somos<span class="sr-only">(Pagina Quem
+                                Somos)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Produtos
+                            <span class="sr-only">(DropDown Produtos)</span></a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="BolosEspeciais.html">Bolos Especiais<span class="sr-only">(Pagina Bolos
+                                    Especiais)</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="DocesSobremesas.html">Doces e Sobremesas<span class="sr-only">(Pagina
+                                    Doces e Sobremesas)</span></a>
+                            </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">Cadastro<span class="sr-only">(Pagina
+                                Cadastro)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-md-0">
+                    <input class="form-control mr-md-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-search" style="font-size:24px; color: white;"></i></a>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-shrink-0">
+
+        <section class="container produtos-po mt-sm-1 mb-sm-3">
+            <div class="row featurette m-1">
+                <section class="col-md-9 container-sm mb-sm-3 ">
+                    <div class="container mt-3 text-center cadastro">
+                        <h3 class="featurette-heading ">Cadastro</h3>
+                        <h4 class="lead cadastro">Torne-se parte da familia Doces do Bem</h4>
+                        <!-- <p>Cadastro Usuario:</p> -->
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                                    aria-selected="true">Clientes</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                    aria-controls="profile" aria-selected="false">Parceiros</a>
+                            </li>
+                        </ul>
+                
+                        <!-- Cliente -->
+                
+                        <div class="tab-content" id="myTabContent">
+                            
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <form class="needs-validation p-4 m-0" style="border: 1px solid;" id="formulario" novalidate>
+                                    <div class="form-row justify-content-center">
+                                        <div class="col-md-11 mb-3">
+                                            <label for="inputNome" class="sr-only">Nome</label>
+                                            <input type="text" class="form-control" id="nomeInput" placeholder="Nome " value="" required>
+                                            <small class="text-muted" id="errNome"></small>
+                                        </div>
+                            
+                                        <div class="form-group col-md-6">
+                                            <label for="inputEmail" class="sr-only">Email</label>
+                                            <input type="email" class="form-control" id="email" placeholder="email@email.com" required>
+                                            <small class="text-muted" id="errEmail"></small>
+                                        </div>
+                                        <div class="form-group col-md-5">
+                                            <label for="inputCPF" class="sr-only">CPF</label>
+                                            <input type="text" class="form-control" id="cpf" placeholder="123.456.789-10" required>
+                                            <small class="text-muted" id="errCPF"></small>
+                                        </div>
+                                    </div>
+                                    <div class="form-row justify-content-center">
+                                        <div class="form-group col-md-7">
+                                            <label for="inputAddress" class="sr-only">Endereço</label>
+                                            <input type="text" class="form-control" id="enderecoCliente" placeholder="Endereço" required>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputAddress2" class="sr-only">Endereço 2</label>
+                                            <input type="date" id="nasc" class="form-control  mx-md-auto" placeholder="11/11/1980">
+                                        </div>
+                                    </div>
+                                    <div class="form-row justify-content-center">
+                                        <div class="form-group col-md-5">
+                                            <label for="inputSenha" class="sr-only">Senha</label>
+                                            <input type="password" class="form-control" id="senha" placeholder="Senha" required>
+                                        </div>
+                                        <div class="form-group col-md-5">
+                                            <label for="inputSenha" class="sr-only">Confirmar Senha</label>
+                                            <input type="password" class="form-control" id="confirmar-senha" placeholder="Confirmar Senha" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-check ">
+                                        <button type="submit" class="btn btn-card">Cadastrar</button>
+                                    </div>
+                                </form>
+                            </div>
+                
+                            <!-- Parceiros -->
+                
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <form class="needs-validation p-4 m-0" style="border: 1px solid;" id="formulario" novalidate>
+                                    <div class="form-row justify-content-center">
+                                        <div class="col-md-8 mb-3">
+                                            <label for="validationCustom01" class="sr-only">Empresa</label>
+                                            <input type="text" class="form-control" id="nomeEmpresa" placeholder="Empresa"
+                                                value="" required>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label for="validationCustom02" class="sr-only">CNPJ</label>
+                                            <input type="text" class="form-control" id="cnpjEmpresa" placeholder="CNPJ" value="">
+                                        </div>
+                                        <div class="form-group col-md-7">
+                                            <label for="inputEmail4" class="sr-only">Email</label>
+                                            <input type="email" class="form-control" id="emailCliente" placeholder="Email" required>
+                                        </div>
+                
+                                        <div class="form-group col-md-4">
+                                            <label for="inputTipoEmpresa" class="sr-only">Tipo Empresa</label>
+                                            <select id="inputTipoEmpresa" class="form-control">
+                                                <option selected>Tipo de Empresa</option>
+                                                <option value="TI">Informatica</option>
+                                                <option value="Com">Comercio</option>
+                                                <option value="VAR">Varejista</option>
+                                                <option value="MER">Mercado</option>
+                                                <option value="BOR">Borracheiro</option>
+                                                <option value="MOD">Moda</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputTelefone1" class="sr-only">Telefone</label>
+                                            <input type="tel" class="form-control" id="telefoneEmpresa" placeholder="Telefone"
+                                                required>
+                                        </div>
+                                        <div class="form-group col-md-5">
+                                            <label for="inputTelefone1" class="sr-only">Contato</label>
+                                            <input type="tel" class="form-control" id="telefoneEmpresa2" placeholder="Celular" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row justify-content-center">
+                                        <div class="form-group col-md-11">
+                                            <label for="inputAddress" class="sr-only">Endereço</label>
+                                            <input type="text" class="form-control" id="enderecoEmpresa" placeholder="Endereço" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row justify-content-center">
+                                        <div class="form-group col-md-4">
+                                            <label for="inputCity" class="sr-only">Cidade</label>
+                                            <input type="text" class="form-control" id="cidadeEmpresa" placeholder="Cidade" required>
+                                        </div>
+                
+                                        <div class="form-group col-md-4">
+                                            <label for="inputEstado" class="sr-only">Estado</label>
+                                            <select id="inputEstado" class="form-control">
+                                                <option selected>Escolher...</option>
+                                                <option value="AC">Acre</option>
+                                                <option value="AL">Alagoas</option>
+                                                <option value="AP">Amapá</option>
+                                                <option value="AM">Amazonas</option>
+                                                <option value="BA">Bahia</option>
+                                                <option value="CE">Ceará</option>
+                                                <option value="DF">Distrito Federal</option>
+                                                <option value="ES">Espírito Santo</option>
+                                                <option value="GO">Goiás</option>
+                                                <option value="MA">Maranhão</option>
+                                                <option value="MT">Mato Grosso</option>
+                                                <option value="MS">Mato Grosso do Sul</option>
+                                                <option value="MG">Minas Gerais</option>
+                                                <option value="PA">Pará</option>
+                                                <option value="PB">Paraíba</option>
+                                                <option value="PR">Paraná</option>
+                                                <option value="PE">Pernambuco</option>
+                                                <option value="PI">Piauí</option>
+                                                <option value="RJ">Rio de Janeiro</option>
+                                                <option value="RN">Rio Grande do Norte</option>
+                                                <option value="RS">Rio Grande do Sul</option>
+                                                <option value="RO">Rondônia</option>
+                                                <option value="RR">Roraima</option>
+                                                <option value="SC">Santa Catarina</option>
+                                                <option value="SP">São Paulo</option>
+                                                <option value="SE">Sergipe</option>
+                                                <option value="TO">Tocantins</option>
+                                                <option value="EX">Estrangeiro</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="inputCEP" class="sr-only">CEP</label>
+                                            <input type="text" class="form-control" id="cepEmpresa" placeholder="CEP" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-check ">
+                                        <button type="submit" class="btn btn-card">Adicionar</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                        </div>
+                    </div>
+       <!-- <ASide></ASide>          -->
+                </section>
+                <section class="col-md-3 mt-3">
+                    <aside >
+                        <h5 class="lead mb-4 text-uppercase text-center">Parceiros</h5>
+                        <img src="img/parceiros4.jpg" class="img-fluid rounded-lg ml-sm-1 mb-sm-3" alt="">
+                        <img src="img/parceiros2.png" class="img-fluid rounded-lg mb-sm-3 mt-3" alt="">
+                        <img src="img/parceiros3.png" class="img-fluid rounded-lg mt-3" alt="">
+                    </aside>
+                </section>
+                
+            </div>
+                
+        </section>
+
+              
+        <!-- footer -->
+
+        <footer class="main-footer" role="contentinfo">
+            <p>Copyright © 2022 | Todos os direitos reservados. </p>
+            <ul class="redes" role="navigation"">
+                <li><a href="https://www.instagram.com/glauciamunizconfeitaria/" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-official" style="font-size:24px"></i></a></li>
+                <li><a href="https://www.instagram.com/glauciamunizconfeitaria/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" style="font-size:24px"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" style="font-size:24px"></i></a></li>
+                <li><a href="#"><i class="fa fa-whatsapp" style="font-size:24px"></i></a></li>
+            </ul>
+        </footer>
+        <button onclick="topFunction()" id="myBtn" title="Voltar ao topo">▲</button>
+    </main>
+    </class>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+<script src="jquery-3.6.0.js"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+<!-- <script src="/bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script> -->
+<script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="/bootstrap-5.1.0-dist/js/bootstrap.min.js"></> -->
+<script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+<script src="bootstrap-validate-2.2.0/dist/bootstrap-validate.js"></script>
+<script src="js/cadastro.js"></script>
+<script src="js/global1.js"></script>
+<script src="js/extra.js"></script>
+    
+</body>
+
+</html>

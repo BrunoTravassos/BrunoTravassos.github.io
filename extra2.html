@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Cadastro</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/quemsomos.css">
+    <link rel="stylesheet" href="css/produtos.css">
+    <!--  -->
+</head>
+
+<body class="d-flex flex-column h-100 home">
+    <class class="container p-0"></class>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top mb-3">
+            <a class="navbar-brand ml-sm-5" href="index.html">Doces do Bem</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav m-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(Pagina Principal)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="QuemSomos.html">Quem Somos<span class="sr-only">(Pagina Quem
+                                Somos)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Produtos
+                            <span class="sr-only">(DropDown Produtos)</span></a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="BolosEspeciais.html">Bolos Especiais<span
+                                    class="sr-only">(Pagina Bolos
+                                    Especiais)</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="DocesSobremesas.html">Doces e Sobremesas<span
+                                    class="sr-only">(Pagina
+                                    Doces e Sobremesas)</span></a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cadastro.html">Cadastro<span class="sr-only">(Pagina
+                                Cadastro)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-md-0">
+                    <input class="form-control mr-md-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <div class="social-icons">
+                        <a href="#"><i class="fa fa-search" style="font-size:24px; color: white;"></i></a>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-shrink-0">
+-----------------------
+<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <form class="needs-validation p-4 m-0" style="border: 1px solid;" id="formulario" novalidate>
+        <div class="form-row justify-content-center">
+            <div class="col-md-3 mb-3">
+                <label for="inputNome" class="sr-only">Primeiro nome</label>
+                <input type="text" class="form-control" id="nomeCliente" placeholder="Nome" value="" required>
+            </div>
+            <div class="col-md-8 mb-3">
+                <label for="inputSobreNome" class="sr-only">Sobrenome</label>
+                <input type="text" class="form-control" id="sNomeCliente" placeholder="Sobrenome" value="" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputEmail" class="sr-only">Email</label>
+                <input type="email" class="form-control" id="emailCliente" placeholder="Email" required>
+            </div>
+            <div class="form-group col-md-5">
+                <label for="inputTelefone" class="sr-only">Telefone</label>
+                <input type="tel" class="form-control" id="telefoneCliente" placeholder="Telefone" required>
+            </div>
+        </div>
+        <div class="form-row justify-content-center">
+            <div class="form-group col-md-8">
+                <label for="inputAddress" class="sr-only">Endereço</label>
+                <input type="text" class="form-control" id="enderecoCliente" placeholder="Endereço" required>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="inputAddress2" class="sr-only">Endereço 2</label>
+                <input type="text" class="form-control" id="enderecoCliente2"
+                    placeholder="Apartamento, sitio, casa, etc.">
+            </div>
+        </div>
+        <div class="form-row justify-content-center">
+            <div class="form-group col-md-7">
+                <label for="inputCity" class="sr-only">Bairro</label>
+                <input type="text" class="form-control" id="bairroCliente" placeholder="Bairro" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputCEP" class="sr-only">CEP</label>
+                <input type="text" class="form-control" id="cepCliente" placeholder="CEP" required>
+            </div>
+        </div>
+        <div class="form-check ">
+            <button type="submit" class="btn btn-card">Cadastrar</button>
+        </div>
+    </form>
+</div>
+
+-------------------------
+
+        <article id="topo"></article>
+        <section class="container">
+            <form class="form">
+                <article class="form-row">
+                    <small class="text-muted col-md-12 col-10 mx-md-0 mx-auto">Nome completo*</small>
+                    <input type="text" class="form-control col-md-12 col-10 mx-md-0 mx-auto" placeholder="Nome Sobrenome"
+                        id="nomeInput">
+                </article>
+                <article class="form-row">
+                    <small class="text-muted col-md-12 col-10 mx-md-0 mx-auto">E-mail*</small>
+                    <input type="text" class="form-control col-md-12 col-10 mx-md-0 mx-auto" id="email"
+                        placeholder="email@email.com">
+                </article>
+                <article class="form-row">
+                    <article class="col-md-6 col-10 mx-md-0 mx-auto">
+                        <article class="form-row align-items-center">
+                            <small class="text-muted col-12 col-md-10 ml-md-auto">DDD+Celular*</small>
+                            <input type="number" class="form-control col-1 offset-0 col-md-1 offset-md-2 ddd" id="ddd-celular"
+                                placeholder="99">
+                            <input type="number" class="form-control col-md-6 col-10 telefone" id="celular"
+                                placeholder="99999-9999">
+                        </article>
+                    </article>
+                    <article class="col-md-6 col-10 mx-md-0 mx-auto">
+                        <article class="form-row align-items-center">
+                            <small class="text-muted col-12 col-md-10 ml-md-auto">DDD+Telefone</small>
+                            <input type="number" class="form-control ddd col-1 col-md-1 offset-md-2" placeholder="99"
+                                class="ddd">
+                            <input type="number" class="form-control col-md-6 col-10 telefone " placeholder="99999-9999">
+                        </article>
+                    </article>
+                </article>
+                <article class="form-row">
+                    <article class="col-md-6 col-10 mx-md-0 mx-auto">
+                        <article class="form-row align-items-center">
+                            <small class="text-muted col-12 col-md-8 mx-md-auto">CPF*</small>
+                            <input type="text" class="form-control col-md-8 mx-md-auto" id="cpf" placeholder="123.456.789-10">
+                        </article>
+                    </article>
+                    <article class="col-md-6 col-10 mx-md-0 mx-auto">
+                        <article class="form-row align-items-center">
+                            <small class="text-muted col-12 col-md-8 mx-md-auto">Data de nascimento*</small>
+                            <input type="date" id="nasc" class="form-control col-md-8 mx-md-auto" placeholder="11/11/1980">
+                        </article>
+                    </article>
+                </article>
+                <article class="form-row">
+                    <article class="col-md-6 col-10 mx-md-0 mx-auto">
+                        <article class="form-row align-items-center">
+                            <small class="text-muted col-12 col-md-8 mx-md-auto">Genêro*</small>
+                            <select class="custom-select col-md-8 mx-md-auto" name="genero" id="genero">
+                                <option value="branco" id="branco"></option>
+                                <option value="f">Feminino</option>
+                                <option value="m">Masculino</option>
+                                <option value="o">Outro:</option>
+                            </select>
+                        </article>
+                    </article>
+                    <article class="col-md-6 col-10 mx-md-0 mx-auto">
+                        <article class="form-row align-items-center">
+                            <small class="text-muted col-12 col-md-8 mx-md-auto qual">Qual</small>
+                            <input type="text" id="qual" class="form-control qual col-md-8 mx-md-auto">
+                        </article>
+                    </article>
+                </article>
+                <article class="form-row">
+                    <article class="col-md-6 col-10 mx-md-0 mx-auto">
+                        <article class="form-row align-items-center">
+                            <small class="text-muted col-12 col-md-8 mx-md-auto">Senha*</small>
+                            <input type="password" class="form-control col-md-8 mx-md-auto" id="senha">
+                        </article>
+                    </article>
+                    <article class="col-md-6 col-10 mx-md-0 mx-auto">
+                        <article class="form-row align-items-center">
+                            <small class="text-muted col-md-8 mx-md-auto col-12">Confirmar senha*</small>
+                            <input type="password" class="form-control col-md-8 mx-md-auto" id="confirmar-senha">
+                        </article>
+                    </article>
+                </article>
+                <article class="form-row">
+                    <article class="col-md-1 mt-md-5 col-3 mx-md-auto mt-5 mx-auto">
+                        <small class="btn btn-info" id="btn-enviar">ENVIAR</small>
+                    </article>
+                </article>
+            </form>
+        </section>
+
+
+        <!-- footer -->
+
+        <footer class="main-footer" role="contentinfo">
+            <p>Copyright © 2022 | Todos os direitos reservados. </p>
+            <ul class="redes" role="navigation"">
+                <li><a href=" https://www.instagram.com/glauciamunizconfeitaria/" target="_blank"
+                rel="noopener noreferrer"><i class="fa fa-facebook-official" style="font-size:24px"></i></a></li>
+                <li><a href="https://www.instagram.com/glauciamunizconfeitaria/" target="_blank"
+                        rel="noopener noreferrer"><i class="fa fa-instagram" style="font-size:24px"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" style="font-size:24px"></i></a></li>
+                <li><a href="#"><i class="fa fa-whatsapp" style="font-size:24px"></i></a></li>
+            </ul>
+        </footer>
+        <button onclick="topFunction()" id="myBtn" title="Voltar ao topo">▲</button>
+    </main>
+    </class>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+   
+    <script src="jquery-3.6.0.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <!-- <script src="/bootstrap-5.1.0-dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="/bootstrap-5.1.0-dist/js/bootstrap.min.js"></> -->
+    <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-validate-2.2.0/dist/bootstrap-validate.js"></script>
+    <script src="js/cadastro.js"></script>
+    <script src="js/global1.js"></script>
+    <script src="js/extra.js"></script>
+
+</body>
+
+</html>
