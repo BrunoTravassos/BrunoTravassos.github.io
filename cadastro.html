@@ -109,14 +109,16 @@
                                         </div>
                                     </div>
                                     <div class="form-row justify-content-center">
+                                        <div class="form-group col-md-4">
+                                            <label for="inputCep" class="sr-only">CEP</label>
+                                            <input type="text" id="cep" class="form-control  mx-md-auto" placeholder="CEP:12345678">
+                                            <small class="text-muted" id="errCEP"></small>
+                                        </div>
                                         <div class="form-group col-md-7">
                                             <label for="inputAddress" class="sr-only">Endereço</label>
-                                            <input type="text" class="form-control" id="enderecoCliente" placeholder="Endereço" required>
+                                            <input type="text" class="form-control" id="enderecoCliente" placeholder="Endereço" readonly>
                                         </div>
-                                        <div class="form-group col-md-4">
-                                            <label for="inputAddress2" class="sr-only">Endereço 2</label>
-                                            <input type="date" id="nasc" class="form-control  mx-md-auto" placeholder="11/11/1980">
-                                        </div>
+                                        
                                     </div>
                                     <div class="form-row justify-content-center">
                                         <div class="form-group col-md-5">
@@ -286,7 +288,7 @@
 <script src="bootstrap-validate-2.2.0/dist/bootstrap-validate.js"></script>
 <script src="js/cadastro.js"></script>
 <script src="js/global1.js"></script>
-<script src="js/extra.js"></script>
+<script src="js/cadastroCliente.js"></script>
     
 </body>
 

@@ -20,11 +20,11 @@ $(document).ready(function () {
   });
 
   $("#nomeInput").blur(function () {
-    if ($(this).val() == "") { 
+    if ($(this).val() == "") {
       $(this).css({ border: "red solid 3px", boxshadow: "0px 0px 4px red" });
       $("#errNome").text("Nome do Cliente inválido!");
     } else {
-      $(this).css({ border: "green solid 3px", boxshadow: "0px 0px 4px red" }); 
+      $(this).css({ border: "green solid 3px", boxshadow: "0px 0px 4px red" });
       $("#errNome").text("");
     }
   });
@@ -34,7 +34,7 @@ $(document).ready(function () {
     var email = $(this).val();
     var aux = $(this).val().length - 6;
     var arroba = email.indexOf("@");
-    
+
     if (arroba == -1 || arroba == 0 || arroba > aux) {
       $(this).css({ border: "red solid 3px", boxshadow: "0px 0px 4px red" });
       $("#errEmail").text("Email inválido!");
@@ -43,7 +43,6 @@ $(document).ready(function () {
       $("#errEmail").text("");
     }
   });
-
 
   /* Validação de CPF */
 
@@ -140,7 +139,6 @@ $(document).ready(function () {
       });
     }
   });
-  
 
   /* Validação de confirmação de senha igual a senha */
 
@@ -193,7 +191,7 @@ $(document).ready(function () {
   $("#confirmar-senha").on("input", function () {
     var confirmarSenha = $(this).val();
     var senha = $("#senha").val();
-    
+
     if ($(this).val() == "") {
       $(this).css({ border: "red solid 3px", boxshadow: "0px 0px 4px red" });
       $("#senha").css({
@@ -215,6 +213,42 @@ $(document).ready(function () {
         border: "green solid 3px",
         boxshadow: "0px 0px 4px green",
       });
+    }
+  });
+
+  /*BuscaCep*/
+  $("#cep").blur(function () {
+    var cep = $(this).val();
+    
+    if (cep.length !== 8) {
+      $("#cep").css({
+        border: "red solid 3px",
+        boxshadow: "0px 0px 4px red",
+      });
+      $(this).css({ border: "red solid 3px", boxshadow: "0px 0px 4px red" });
+      $("#errCEP").text("CEP inválido!");
+    } else  {
+      
+      fetch(`https://viacep.com.br/ws/${cep}/json/`)
+        .then(resposta => resposta.json())
+        .then(json => {
+          if (json.logradouro !== undefined) {
+            let logradouro = `${json.logradouro} - ${json.bairro} - ${json.localidade}`;
+            document.getElementById("enderecoCliente").value = logradouro;
+            $(this).css({
+              border: "green solid 3px",
+              boxshadow: "0px 0px 4px red",
+            });
+          } else {
+            $(this).css({
+              border: "red solid 3px",
+              boxshadow: "0px 0px 4px red",
+            });
+            document.getElementById("enderecoCliente").value = "";
+            $("#errCEP").text("CEP inválido!");
+          }
+            
+      })
     }
   });
 
